@@ -1,0 +1,11 @@
+n=int(input())
+s=0
+temp=n
+while(temp!=0):
+    d=temp%10
+    s=s+d
+    temp=temp//10
+if(n%s==0):
+    print('True')
+else:
+    print('False')
