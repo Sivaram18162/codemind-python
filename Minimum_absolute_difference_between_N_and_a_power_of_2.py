@@ -1,0 +1,13 @@
+n=int(input())
+i=0
+s=0
+while(s<=n):
+    s=2**i
+    i=i+1
+I=s//2
+m=abs(s-n)
+k=abs(n-I)
+if(m>k):
+    print(k)
+else:
+    print(m)
