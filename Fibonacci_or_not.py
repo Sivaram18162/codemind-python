@@ -1,16 +1,19 @@
 n=int(input())
-c=0
 a=0
 b=1
-if n==0 or n==1:
+c=a+b
+f=0
+if(n==0 or n==1):
     print("True")
-else:
-    
-    while c<n:
-        c=a+b
-        a=b
-        b=c
-    if c==n:
+for i in range(1,n+1,1):
+    c=a+b
+    a=b
+    b=c
+    if(c==n):
+        f=1
         print("True")
+        break
     else:
-        print("False")
+        c=c+1
+if(f==0):
+    print("False")
