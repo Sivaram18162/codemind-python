@@ -7,7 +7,7 @@ def prime(n):
         return 1
     else:
         return 0
-n=int(input())        
+n=int(input())
 f=0
 for i in range(1,n+1):
     if(prime(i)):
@@ -15,9 +15,10 @@ for i in range(1,n+1):
             if(prime(j)):
                 if(i*j==n):
                     f=1
-                    l=i
+                    I=i
                     g=j
 if(f==0):
     print("-1")
 else:
-    print(g,l)
+    print(g,I)
+    
