@@ -1,6 +1,6 @@
 def pal(n):
-    s=0
     temp=n
+    s=0
     while(n!=0):
         d=n%10
         s=s*10+d
@@ -9,10 +9,10 @@ def pal(n):
         return 1
     else:
         return 0
-k=int(input())
-a=list(map(int,input().split()))
+n=int(input())
+arr=list(map(int,input().split()))
 c=0
-for i in range(k):
-    if pal(a[i]):
+for i in range(len(arr)):
+    if(pal(arr[i])):
         c=c+1
 print(c)
